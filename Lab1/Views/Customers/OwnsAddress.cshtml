@@ -1,0 +1,20 @@
+﻿@model Lab2.Models.ViewModels.CustomerOwnsAddressVM
+
+@{
+    ViewData["Title"] = "Owner Checker";
+}
+
+<form asp-action="OwnsAddress">
+    <select asp-for="CustomerId" asp-items="Model.Customers"></select>
+    <select asp-for="AddressId" asp-items="Model.Addresses"></select>
+    <input type="submit" value="Submit" />
+</form>
+
+@if (Model.OwnsAddress)
+{
+    <h2>Customer owns the selected address</h2>
+}
+else
+{
+    <h2>Customer does not own the selected address</h2>
+}
