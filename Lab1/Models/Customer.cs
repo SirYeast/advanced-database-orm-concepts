@@ -1,4 +1,4 @@
-﻿namespace Lab1.Models
+﻿namespace Lab2.Models
 {
 	public class Customer
 	{
@@ -8,7 +8,7 @@
 		public string? CompanyName { get; set; }
 		public string? Phone { get; set; }
 
-		public virtual HashSet<Address> Addresses { get; set; }
+		public virtual HashSet<CustomerAddress> Addresses { get; set; } = new();
 
 		public Customer() { }
 	}

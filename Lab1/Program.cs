@@ -1,4 +1,4 @@
-﻿using Lab1.Data;
+﻿using Lab2.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

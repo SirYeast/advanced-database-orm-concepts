@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Lab1.Migrations
+namespace Lab2.Migrations
 {
     /// <inheritdoc />
     public partial class InitialCreate : Migration

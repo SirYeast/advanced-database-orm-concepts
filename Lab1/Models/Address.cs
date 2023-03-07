@@ -1,4 +1,4 @@
-﻿namespace Lab1.Models
+﻿namespace Lab2.Models
 {
 	public class Address
 	{
